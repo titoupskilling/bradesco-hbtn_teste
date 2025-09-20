@@ -4,6 +4,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class PersonTest {
+
+    Person pessoa;
+
+    @BeforeEach
+    void setup() {
+        pessoa = new Person();
+    }
+    
     @Test
     public void show_full_name(){
         assertTrue(Pessoa.emailValid("email_teste@dominio.com.br"));
