@@ -18,6 +18,8 @@ public class PersonTest {
         assertTrue(Pessoa.emailValid("email_teste@dominio.com.br"));
     }
     
+    @ParameterizedTest
+    @ValueSource(strings = { "PT1H", "PT2H" })
     @Test
     public void check_user_not_valid(){
         assertFalse(Pessoa.emailValid("email_testedominio.com.br"));
