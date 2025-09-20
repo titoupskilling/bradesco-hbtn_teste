@@ -9,6 +9,14 @@ public class Person {
     private boolean publicServer;
     private static float salary;
 
+    public static boolean checkUser(){
+        return true;
+    }
+
+    public static boolean checkPassword(){
+        return true;
+    }
+
     public static boolean isMEI(){
         //(salary * 12) < 130000 = true
         //age> 18
