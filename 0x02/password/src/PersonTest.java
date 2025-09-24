@@ -92,4 +92,16 @@ public class PersonTest {
         assertEquals(true, Person.checkPassword());
         assertEquals(true, Person.checkPassword());
     }
+    
+    @Test
+    public void does_not_have_eight_chars_3(){
+        assertEquals(false, Person.isMEI());
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    @Test
+    public void check_password_valid_3(){
+        assertEquals(true, Person.checkPassword());
+        assertEquals(true, Person.checkPassword());
+    }
 }
