@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -25,7 +26,7 @@ public class PersonTest {
     //@ValueSource(strings = { "PT1H", "PT2H" })
     @Test
     public void check_user_not_valid(){
-        assertTrue(Person.isMEI());
+        assertFalse(Person.isMEI());
         assertEquals(true, Person.checkPassword());
     }
     
