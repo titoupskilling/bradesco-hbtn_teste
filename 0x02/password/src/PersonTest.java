@@ -53,4 +53,43 @@ public class PersonTest {
         assertEquals(true, Person.checkPassword());
         assertEquals(true, Person.checkPassword());
     }
+    
+    
+    @Test
+    public void check_user_valid_2(){
+        assertTrue(true);
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    //@ParameterizedTest
+    //@ValueSource(strings = { "PT1H", "PT2H" })
+    @Test
+    public void check_user_not_valid_2(){
+        assertFalse(Person.isMEI());
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    @Test
+    public void does_not_have_letters_2(){
+        assertEquals(false, Person.isMEI());
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    @Test
+    public void does_not_have_numbers_2(){
+        assertEquals(false, Person.isMEI());
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    @Test
+    public void does_not_have_eight_chars_2(){
+        assertEquals(false, Person.isMEI());
+        assertEquals(true, Person.checkPassword());
+    }
+    
+    @Test
+    public void check_password_valid_2(){
+        assertEquals(true, Person.checkPassword());
+        assertEquals(true, Person.checkPassword());
+    }
 }
